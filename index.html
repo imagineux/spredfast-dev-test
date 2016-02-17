@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Hardcore Vegetables</title>
+    <meta name="description" content="A leaderboard of the most hardcore vegetables of all time." />
+    <meta name="author" content="Spredfast" />
+    <meta name="viewport" content="width=device-width" />
+    <base target="_blank" />
+
+    <!-- CSS -->
+    <link href="./css/style.css" rel="stylesheet" />
+
+  </head>
+  <body>
+    <div class="leaderboard cf">
+      <h1 class="leaderboard__heading">
+        <div class="sr-only">
+          Hardcore Produce
+        </div>
+      </h1>
+      <dl class="leaderboard__list">
+        <div class="spinner"></div>
+      </dl>
+    </div>
+
+
+    <!-- JS -->
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/api.js"></script>
+    <script src="./js/script.js"></script>
+
+    <script>
+      window.spredfast.leaderboard.update();
+      var set_interval = window.setInterval(window.spredfast.leaderboard.update, 15000);
+
+      jQuery.fn.extend({
+        animate_in: function(options) {
+          var $this = $(this);
+
+          (function () {
+            (function animate(index) {
+              setTimeout(function() {
+                $this.eq(index).addClass(options.class_name);
+
+                index += 1;
+
+                if(index < $this.length) {
+                  animate(index)
+                }
+
+              }, 60);
+            })(0);
+          }());
+        }
+      });
+    </script>
+
+
+  </body>
+</html>

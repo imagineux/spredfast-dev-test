@@ -1,0 +1,22 @@
+{
+  "name": "spredfast-dev-test",
+  "version": "0.1.0",
+  "description": "Spreadfast coding challenge",
+  "main": "server.js",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-cli": "^6.5.1",
+    "babel-preset-es2015": "^6.5.0",
+    "less": "^2.6.0",
+    "normalize.css": "^3.0.3"
+  },
+  "scripts": {
+    "prebuild": "cp src/images/* ./images/",
+    "build": "npm run build:js && npm run build:css",
+    "build:js": "babel ./src/javascript/ -d ./js",
+    "build:css": "lessc ./src/styles/style.less css/style.css",
+    "postbuild": "postcss --use autoprefixer css/style.css -d css/"
+  },
+  "author": "",
+  "license": "ISC"
+}

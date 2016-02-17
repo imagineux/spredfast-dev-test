@@ -1,0 +1,90 @@
+@import (inline) "../../node_modules/normalize.css/normalize.css";
+@import "./variables";
+@import "./helpers";
+
+
+/**
+ * Global
+**/
+
+body {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  background: #444444 data-uri('../images/bg-pattern.jpg');
+  box-sizing: border-box;
+  padding: 2rem 1rem;
+  min-width: 360px;
+  font-weight: 300;
+}
+
+.spinner {
+  background: data-uri('image/svg+xml;charset=UTF-8', '../images/gears.svg') center no-repeat;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+
+/**
+ * Leaderboard
+**/
+
+.leaderboard:extend(.cf) {
+  max-width: 42rem;
+  margin: 3vw auto;
+
+  .leaderboard__heading {
+    background: data-uri('../images/harcore-logo.png') center no-repeat;
+    background-size: contain;
+    text-align: center;
+    min-height: 5rem;
+    color: white;
+    height: 11vw;
+    margin: 0;
+
+    > *:extend(.sr-only)  {}
+  }
+
+  .leaderboard__list {
+    border: 0.25em solid @lightgrey;
+    background-color: @black-vail;
+    border-radius: 1.5em;
+    position: relative;
+    min-height: 10rem;
+    max-width: 28rem;
+    margin: 0 auto;
+
+    > li {
+      border-bottom: 1px solid @white-vail;
+      justify-content: space-between;
+      transition: all 0.3s ease-out;
+      padding: 0.625rem 1.625rem;
+      font-size: 1.125rem;
+      font-weight: bold;
+      display: flex;
+      color: white;
+      opacity: 0;
+
+      &.show {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    > dt {
+      text-align: right;
+    }
+
+    .list--mention {
+      color: @red;
+      margin: 0;
+
+      &:after {
+        content: ' Mentions';
+        font-weight: 100;
+        font-size: 14px;
+        color: @white;
+      }
+    }
+  }
+}

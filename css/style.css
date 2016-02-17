@@ -1,0 +1,530 @@
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS and IE text size adjust after device orientation change,
+ *    without disabling user zoom.
+ */
+
+html {
+  font-family: sans-serif; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block; /* 1 */
+  vertical-align: baseline; /* 2 */
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/10/11, Safari, and Firefox < 22.
+ */
+
+[hidden],
+template {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+
+a {
+  background-color: transparent;
+}
+
+/**
+ * Improve readability of focused elements when they are also in an
+ * active/hover state.
+ */
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Contain overflow in all browsers.
+ */
+
+pre {
+  overflow: auto;
+}
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit; /* 1 */
+  font: inherit; /* 2 */
+  margin: 0; /* 3 */
+}
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+
+button {
+  overflow: visible;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+
+button,
+html input[type="button"], /* 1 */
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button; /* 2 */
+  cursor: pointer; /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+
+input {
+  line-height: normal;
+}
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome.
+ */
+
+input[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  box-sizing: content-box; /* 2 */
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+
+legend {
+  border: 0; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+
+optgroup {
+  font-weight: bold;
+}
+
+/* Tables
+   ========================================================================== */
+
+/**
+ * Remove most spacing between table cells.
+ */
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+/**
+ * Base colors
+**/
+/**
+ * Variations colors
+**/
+.sr-only,
+.leaderboard .leaderboard__heading > * {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+.cf:after,
+.cf:before {
+  content: " ";
+  display: table;
+}
+.cf:after {
+  clear: both;
+}
+/**
+ * Global
+**/
+body {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  background: #444444 url("data:image/jpeg;base64,/9j/4QAYRXhpZgAASUkqAAgAAAAAAAAAAAAAAP/sABFEdWNreQABAAQAAAA8AAD/4QMxaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLwA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/PiA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJBZG9iZSBYTVAgQ29yZSA1LjYtYzExMSA3OS4xNTgzMjUsIDIwMTUvMDkvMTAtMDE6MTA6MjAgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDQyAyMDE1IChNYWNpbnRvc2gpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkMwRDRDNUY5Q0Q2QzExRTVCNUQyRjQxRTA4RkZGNDI0IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkMwRDRDNUZBQ0Q2QzExRTVCNUQyRjQxRTA4RkZGNDI0Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6QzBENEM1RjdDRDZDMTFFNUI1RDJGNDFFMDhGRkY0MjQiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6QzBENEM1RjhDRDZDMTFFNUI1RDJGNDFFMDhGRkY0MjQiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7/7gAOQWRvYmUAZMAAAAAB/9sAhAAGBAQEBQQGBQUGCQYF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");
+  box-sizing: border-box;
+  padding: 2rem 1rem;
+  min-width: 360px;
+  font-weight: 300;
+}
+.spinner {
+  background: url("data:image/svg+xml;charset=UTF-8,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3Csvg%20width%3D'120px'%20height%3D'120px'%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20100%20100%22%20preserveAspectRatio%3D%22xMidYMid%22%20class%3D%22uil-gears%22%3E%3Crect%20x%3D%220%22%20y%3D%220%22%20width%3D%22100%22%20height%3D%22100%22%20fill%3D%22none%22%20class%3D%22bk%22%3E%3C%2Frect%3E%3Cg%20transform%3D%22translate(-20%2C-20)%22%3E%3Cpath%20d%3D%22M79.9%2C52.6C80%2C51.8%2C80%2C50.9%2C80%2C50s0-1.8-0.1-2.6l-5.1-0.4c-0.3-2.4-0.9-4.6-1.8-6.7l4.2-2.9c-0.7-1.6-1.6-3.1-2.6-4.5%20L70%2C35c-1.4-1.9-3.1-3.5-4.9-4.9l2.2-4.6c-1.4-1-2.9-1.9-4.5-2.6L59.8%2C27c-2.1-0.9-4.4-1.5-6.7-1.8l-0.4-5.1C51.8%2C20%2C50.9%2C20%2C50%2C20%20s-1.8%2C0-2.6%2C0.1l-0.4%2C5.1c-2.4%2C0.3-4.6%2C0.9-6.7%2C1.8l-2.9-4.1c-1.6%2C0.7-3.1%2C1.6-4.5%2C2.6l2.1%2C4.6c-1.9%2C1.4-3.5%2C3.1-5%2C4.9l-4.5-2.1%20c-1%2C1.4-1.9%2C2.9-2.6%2C4.5l4.1%2C2.9c-0.9%2C2.1-1.5%2C4.4-1.8%2C6.8l-5%2C0.4C20%2C48.2%2C20%2C49.1%2C20%2C50s0%2C1.8%2C0.1%2C2.6l5%2C0.4%20c0.3%2C2.4%2C0.9%2C4.7%2C1.8%2C6.8l-4.1%2C2.9c0.7%2C1.6%2C1.6%2C3.1%2C2.6%2C4.5l4.5-2.1c1.4%2C1.9%2C3.1%2C3.5%2C5%2C4.9l-2.1%2C4.6c1.4%2C1%2C2.9%2C1.9%2C4.5%2C2.6l2.9-4.1%20c2.1%2C0.9%2C4.4%2C1.5%2C6.7%2C1.8l0.4%2C5.1C48.2%2C80%2C49.1%2C80%2C50%2C80s1.8%2C0%2C2.6-0.1l0.4-5.1c2.3-0.3%2C4.6-0.9%2C6.7-1.8l2.9%2C4.2%20c1.6-0.7%2C3.1-1.6%2C4.5-2.6L65%2C69.9c1.9-1.4%2C3.5-3%2C4.9-4.9l4.6%2C2.2c1-1.4%2C1.9-2.9%2C2.6-4.5L73%2C59.8c0.9-2.1%2C1.5-4.4%2C1.8-6.7L79.9%2C52.6%20z%20M50%2C65c-8.3%2C0-15-6.7-15-15c0-8.3%2C6.7-15%2C15-15s15%2C6.7%2C15%2C15C65%2C58.3%2C58.3%2C65%2C50%2C65z%22%20fill%3D%22%23ffffff%22%3E%3CanimateTransform%20attributeName%3D%22transform%22%20type%3D%22rotate%22%20from%3D%2290%2050%2050%22%20to%3D%220%2050%2050%22%20dur%3D%221s%22%20repeatCount%3D%22indefinite%22%3E%3C%2FanimateTransform%3E%3C%2Fpath%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(20%2C20)%20rotate(15%2050%2050)%22%3E%3Cpath%20d%3D%22M79.9%2C52.6C80%2C51.8%2C80%2C50.9%2C80%2C50s0-1.8-0.1-2.6l-5.1-0.4c-0.3-2.4-0.9-4.6-1.8-6.7l4.2-2.9c-0.7-1.6-1.6-3.1-2.6-4.5%20L70%2C35c-1.4-1.9-3.1-3.5-4.9-4.9l2.2-4.6c-1.4-1-2.9-1.9-4.5-2.6L59.8%2C27c-2.1-0.9-4.4-1.5-6.7-1.8l-0.4-5.1C51.8%2C20%2C50.9%2C20%2C50%2C20%20s-1.8%2C0-2.6%2C0.1l-0.4%2C5.1c-2.4%2C0.3-4.6%2C0.9-6.7%2C1.8l-2.9-4.1c-1.6%2C0.7-3.1%2C1.6-4.5%2C2.6l2.1%2C4.6c-1.9%2C1.4-3.5%2C3.1-5%2C4.9l-4.5-2.1%20c-1%2C1.4-1.9%2C2.9-2.6%2C4.5l4.1%2C2.9c-0.9%2C2.1-1.5%2C4.4-1.8%2C6.8l-5%2C0.4C20%2C48.2%2C20%2C49.1%2C20%2C50s0%2C1.8%2C0.1%2C2.6l5%2C0.4%20c0.3%2C2.4%2C0.9%2C4.7%2C1.8%2C6.8l-4.1%2C2.9c0.7%2C1.6%2C1.6%2C3.1%2C2.6%2C4.5l4.5-2.1c1.4%2C1.9%2C3.1%2C3.5%2C5%2C4.9l-2.1%2C4.6c1.4%2C1%2C2.9%2C1.9%2C4.5%2C2.6l2.9-4.1%20c2.1%2C0.9%2C4.4%2C1.5%2C6.7%2C1.8l0.4%2C5.1C48.2%2C80%2C49.1%2C80%2C50%2C80s1.8%2C0%2C2.6-0.1l0.4-5.1c2.3-0.3%2C4.6-0.9%2C6.7-1.8l2.9%2C4.2%20c1.6-0.7%2C3.1-1.6%2C4.5-2.6L65%2C69.9c1.9-1.4%2C3.5-3%2C4.9-4.9l4.6%2C2.2c1-1.4%2C1.9-2.9%2C2.6-4.5L73%2C59.8c0.9-2.1%2C1.5-4.4%2C1.8-6.7L79.9%2C52.6%20z%20M50%2C65c-8.3%2C0-15-6.7-15-15c0-8.3%2C6.7-15%2C15-15s15%2C6.7%2C15%2C15C65%2C58.3%2C58.3%2C65%2C50%2C65z%22%20fill%3D%22%23ffffff%22%3E%3CanimateTransform%20attributeName%3D%22transform%22%20type%3D%22rotate%22%20from%3D%220%2050%2050%22%20to%3D%2290%2050%2050%22%20dur%3D%221s%22%20repeatCount%3D%22indefinite%22%3E%3C%2FanimateTransform%3E%3C%2Fpath%3E%3C%2Fg%3E%3C%2Fsvg%3E") center no-repeat;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+/**
+ * Leaderboard
+**/
+.leaderboard {
+  max-width: 42rem;
+  margin: 3vw auto;
+}
+.leaderboard .leaderboard__heading {
+  background: url('../images/harcore-logo.png') center no-repeat;
+  background-size: contain;
+  text-align: center;
+  min-height: 5rem;
+  color: white;
+  height: 11vw;
+  margin: 0;
+}
+.leaderboard .leaderboard__list {
+  border: 0.25em solid #cfcece;
+  background-color: rgba(28, 28, 28, 0.9);
+  border-radius: 1.5em;
+  position: relative;
+  min-height: 10rem;
+  max-width: 28rem;
+  margin: 0 auto;
+}
+.leaderboard .leaderboard__list > li {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  padding: 0.625rem 1.625rem;
+  font-size: 1.125rem;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  opacity: 0;
+}
+.leaderboard .leaderboard__list > li.show {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  opacity: 1;
+}
+.leaderboard .leaderboard__list > dt {
+  text-align: right;
+}
+.leaderboard .leaderboard__list .list--mention {
+  color: #9d0b10;
+  margin: 0;
+}
+.leaderboard .leaderboard__list .list--mention:after {
+  content: ' Mentions';
+  font-weight: 100;
+  font-size: 14px;
+  color: #ffffff;
+}
